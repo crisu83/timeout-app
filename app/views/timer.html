@@ -1,0 +1,20 @@
+<div ng-include="'views/header.html'"></div>
+
+<div class="content content-centered timer-content">
+
+  <div class="push-down">
+    <p class="timer-child">{{child.name}}</p>
+    <p class="timer-text">
+      <span ng-hide="running">{{timerText}}</span>
+      <span id="timerContainer" ng-show="running""></span>
+    </p>
+  </div>
+
+</div>
+
+<div class="primary-actions">
+  <a class="btn btn-negative btn-block" ng-click="startTimer()" ng-hide="running">Start</a>
+  <a class="btn btn-block" ng-click="stopTimer()" ng-show="running">Stop</a>
+</div>
+
+<div ng-include="'views/tab-bar.html'"></div>

@@ -1,0 +1,9 @@
+<header class="bar bar-nav">
+  <a ng-if="titleButtonLeft" class="btn pull-left {{titleButtonLeft.cssClass}}" href="{{titleButtonLeft.url}}">
+    {{titleButtonLeft.label}}
+  </a>
+  <h1 ng-if="titleText" class="title">{{titleText}}</h1>
+  <a ng-if="titleButtonRight" class="btn pull-right {{titleButtonRight.cssClass}}" href="{{titleButtonRight.url}}">
+    {{titleButtonRight.label}}
+  </a>
+</header>
